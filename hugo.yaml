@@ -1,3 +1,19 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+######################## default configuration ####################
+baseURL: /
+title: AuDHD Cloud
+languageCode: en-US
+defaultContentLanguage: en
+enableEmoji: true
+summaryLength: 10
+paginate: 6
+enableGitInfo: true # Change 'Lastmod' to latest git commit
+removePathAccents: true # Because I may type accents
+
+#################### Navigation ####################
+sectionPagesMenu: "main"
+
+#################### Taxonomies;grouping ####################
+# Must include default tags and categories
+taxonomies:
+  category: categories
+  tag: tags

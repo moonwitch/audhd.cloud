@@ -39,6 +39,7 @@ jobs:
         if: github.ref == 'refs/heads/site-setup'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
+          publish_dir: ./public  # default: public
+          publish_branch: gh-pages  # default: gh-pages
           cname: audhd.cloud
           commit_message: ${{ github.event.head_commit.message }}

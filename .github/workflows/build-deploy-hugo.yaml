@@ -37,6 +37,6 @@ jobs:
         if: github.ref == 'refs/heads/gh-pages'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_branch: gh-pages
           cname: audhd.cloud
           commit_message: ${{ github.event.head_commit.message }}

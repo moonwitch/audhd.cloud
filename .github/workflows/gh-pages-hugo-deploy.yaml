@@ -3,7 +3,7 @@ name: GitHub Pages from Hugo
 on:
   push:
     branches:
-      - gh-pages
+      - site-setup
   pull_request:
   workflow_dispatch:
 
@@ -41,6 +41,6 @@ jobs:
         if: github.ref == 'refs/heads/gh-pages'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_branch: gh-pages
           cname: audhd.cloud
           commit_message: ${{ github.event.head_commit.message }}

@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - site-setup
-  pull_request:
-  workflow_dispatch:
 
 jobs:
   deploy:

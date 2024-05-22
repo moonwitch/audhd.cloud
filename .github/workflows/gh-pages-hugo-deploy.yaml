@@ -41,7 +41,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public  # default: public
           publish_branch: gh-pages  # default: gh-pages
-          cname: audhd.cloud
+          # cname: audhd.cloud
           commit_message: ${{ github.event.head_commit.message }}
           force_orphan: true
           user_name: 'github-actions[bot]'

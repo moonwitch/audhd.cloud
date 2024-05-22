@@ -3,7 +3,7 @@ name: GitHub Pages from Hugo
 on:
   push:
     branches:
-      - site-setup
+      - site-setup # branch name to trigger deployment
 
 jobs:
   deploy:
@@ -43,3 +43,6 @@ jobs:
           publish_branch: gh-pages  # default: gh-pages
           cname: audhd.cloud
           commit_message: ${{ github.event.head_commit.message }}
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'

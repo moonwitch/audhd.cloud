@@ -2,8 +2,6 @@ baseURL: /
 languageCode: en-us
 title: AuDHD.Cloud
 
-theme: "quint"
-
 summarylength: 25
 menu:
   nav:

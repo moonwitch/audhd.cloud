@@ -1,4 +1,0 @@
-baseURL = 'https://audhd.cloud'
-languageCode = 'en-us'
-title = 'AuDHD.cloud'
-theme = ["github.com/theNewDynamic/gohugo-theme-ananke/v2"]
